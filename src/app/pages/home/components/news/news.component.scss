@@ -1,0 +1,13 @@
+.home-page-block-news {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+  padding: 0 24px;
+
+  .home-page-block-image {
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.cards-box {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  gap: 15px;
+  margin-bottom: 56px;
+}

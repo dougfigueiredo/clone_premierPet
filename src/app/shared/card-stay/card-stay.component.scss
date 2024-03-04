@@ -1,0 +1,37 @@
+.card-stay {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  width: auto;
+  height: 227px;
+  border: 0.5px solid rgba(209, 207, 207, 0.712);
+  border-radius: 5px;
+
+  .icon-label {
+    display: flex;
+    align-self: flex-start;
+  }
+  span {
+    font-size: 20px;
+    background-color: #256fee;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  .paragrafy {
+    padding: 5px;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .link-position {
+    width: 90%;
+  }
+}
