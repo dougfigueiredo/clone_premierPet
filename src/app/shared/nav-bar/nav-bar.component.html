@@ -1,18 +1,19 @@
-<div class="navbar-opened">
+<div #navbar class="navbar navbar-closed" (mouseenter)="openMenu()" (mouseleave)="closeMenu()">
   <div class="nav-header">
-    <img src="../../../assets/Premier Pet Exclusive_files/club-exclusive-logo-2.png" alt="">
+    <mat-icon class="menu-icon" fontIcon="menu_outlined"></mat-icon>
+    <img class="open" src="../../../assets/Premier Pet Exclusive_files/club-exclusive-logo-2.png" alt="">
     <div class="line-solid"></div>
   </div>
   <div class="navbar-link">
     <ul>
-      <li>Início</li>
-      <li>Perfil</li>
-      <li>Campanhas</li>
-      <li>Exemple Exclusive</li>
-      <li>Pedidos</li>
-      <li>Mercado</li>
-      <li>Ajuda</li>
-      <li>Sair</li>
+      <li><mat-icon fontIcon="home_outlined"></mat-icon> <span>Início</span></li>
+      <li><mat-icon fontIcon="person_outlined"></mat-icon> <span>Perfil</span></li>
+      <li><mat-icon fontIcon="card_giftcard_outlined"></mat-icon> <span>Campanhas</span></li>
+      <li><mat-icon fontIcon="filter_vintage_outlined"></mat-icon> <span>Exemple Exclusive</span></li>
+      <li><mat-icon fontIcon="assignment_outlined"></mat-icon> <span>Pedidos</span></li>
+      <li><mat-icon fontIcon="query_stats_outlined"></mat-icon> <span>Mercado</span></li>
+      <li><mat-icon fontIcon="help_outline_outlined"></mat-icon> <span>Ajuda</span></li>
+      <li><mat-icon fontIcon="login_outlined"></mat-icon> <span>Sair</span></li>
     </ul>
   </div>
   <div class="img-pet">

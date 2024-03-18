@@ -1,4 +1,4 @@
-.navbar-opened {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,8 +6,12 @@
   background-color: #fff;
   z-index: 100;
   width: 300px;
+  transition: 0.2s ease-in-out;
 
   .nav-header {
+    .menu-icon {
+      display: none;
+    }
     height: 100px;
     margin: 0 0 15px;
     align-items: center;
@@ -25,7 +29,11 @@
 
   .navbar-link {
     overflow: auto;
+    overflow-x: hidden;
     height: 300px;
+    span {
+      margin-left: 15px;
+    }
     ul {
       list-style: none;
       padding: 0 0 0 15px;
@@ -38,8 +46,14 @@
         display: flex;
         align-items: center;
         margin: 10px 8px 25px 0;
-        padding-left: 8px;
+        padding: 8px;
         cursor: pointer;
+      }
+      li:hover {
+        color: #3d86f4;
+        background-color: #5494f54a;
+        border-radius: 5px;
+        padding: auto;
       }
     }
   }
@@ -70,10 +84,57 @@
   }
 }
 
+.navbar-closed {
+  width: 100px;
+  .nav-header {
+    .menu-icon {
+      color: #5f6060;
+    }
+    .open {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+      margin-top: 25px;
+      font-size: 45px;
+      width: 50%;
+      height: 50%;
+    }
+    .line-solid {
+      margin-top: 25px;
+      width: 100px;
+    }
+  }
+  .navbar-link {
+    overflow: hidden;
+    height: auto;
+
+    ul {
+      padding: 0;
+      li {
+        padding-bottom: 10px;
+        justify-content: center;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  .img-pet {
+    display: none;
+  }
+  .catalog-btn {
+    display: none;
+  }
+}
+
 .overlay {
   width: 100%;
   height: 100%;
   z-index: 90;
   position: fixed;
   background: rgba(0, 0, 0, 0.42);
+}
+.navbar-closed + .overlay {
+  display: none;
 }
